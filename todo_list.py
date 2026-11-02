@@ -1,3 +1,6 @@
+def neat_message(message):
+    print(f"{'-' * len(message)}\n{message}\n{'-' * len(message)}")
+
 def menu():
     while True:
         user_choice = input('--- TO-DO list ---\n 1. View tasks\n 2. Add a task\n 3. Complete a task\n 4. Quit\n Choose: ').strip()
@@ -11,7 +14,7 @@ def menu():
             print('Quitting...')
             return user_choice
         else:
-            print('\nPlease choose an option.\n')
+            neat_message('Please choose an option')
 
 def view_task():
     try:
@@ -20,8 +23,7 @@ def view_task():
             for i, line in enumerate(f, 1):
                 print(f'{i}. {line}').st
     except FileNotFoundError:
-        message = "You haven't written anything yet!"
-        print(f"{'-' * len(message)}\n{message}\n{'-' * len(message)}")
+        neat_message("You haven't written anything yet")
 
 
 menu() 
