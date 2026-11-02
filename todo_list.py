@@ -1,6 +1,6 @@
 def menu():
     while True:
-        user_choice = input('--- To-do list ---\n 1. View tasks\n 2. Add a task\n 3. Complete a task\n 4. Quit\n Choose: ').strip()
+        user_choice = input('--- TO-DO list ---\n 1. View tasks\n 2. Add a task\n 3. Complete a task\n 4. Quit\n Choose: ').strip()
         if user_choice == '1':
             view_task()
         elif user_choice == '2':
