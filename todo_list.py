@@ -13,6 +13,15 @@ def menu():
         else:
             print('\nPlease choose an option.\n')
 
-with open('tasks.txt', 'w', encoding='utf-8') as f:
-    pass
+def view_task():
+    try:
+        with open('tasks.txt', 'r', encoding='utf-8') as f:
+            print('Your current tasks are:')
+            for i, line in enumerate(f, 1):
+                print(f'{i}. {line}').st
+    except FileNotFoundError:
+        message = "You haven't written anything yet!"
+        print(f"{'-' * len(message)}\n{message}\n{'-' * len(message)}")
+
+
 menu() 
