@@ -10,6 +10,8 @@ def menu():
         elif user_choice == '4':
             print('Quitting...')
             return user_choice
+        else:
+            print('\nPlease choose an option.\n')
 
 with open('tasks.txt', 'w', encoding='utf-8') as f:
     pass
