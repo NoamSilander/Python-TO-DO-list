@@ -79,4 +79,6 @@ def complete_task():
                 target.write(line)
     os.replace('tasks_temp.txt', 'tasks.txt')
     neat_message('Tasks updated!')
-menu() 
+
+if __name__ = '__main__':
+    menu() 
