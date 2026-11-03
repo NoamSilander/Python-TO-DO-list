@@ -80,5 +80,5 @@ def complete_task():
     os.replace('tasks_temp.txt', 'tasks.txt')
     neat_message('Tasks updated!')
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     menu() 
